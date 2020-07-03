@@ -110,14 +110,13 @@ const Mutations = {
       where: { email: args.email },
       data: { resetToken, resetTokenExpiry },
     });
-    console.log(res);
     return { message: "Thanks!" };
     // 3. Email them that reset token
   },
   async resetPassword(parent, args, ctx, info) {
     // 1. check if the passwords match
     if (args.password !== args.confirmPassword) {
-      throw new Error("Yo Passwords don't match!");
+      throw new Error("Your Passwords don't match!");
     }
     // 2. check if its a legit reset token
     // 3. Check if its expired
