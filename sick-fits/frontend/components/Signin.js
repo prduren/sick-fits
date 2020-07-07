@@ -37,8 +37,13 @@ export default class Signin extends Component {
               method="post"
               onSubmit={async (e) => {
                 e.preventDefault();
-                const res = await signin();
-                this.setState({ name: "", email: "", password: "" });
+                try {
+                  await signin();
+                  // window.location.assign("/");
+                } catch (err) {
+                  console.error(err);
+                }
+                // this.setState({ name: "", email: "", password: "" });
               }}
             >
               <fieldset disabled={loading} aria-busy={loading}>
