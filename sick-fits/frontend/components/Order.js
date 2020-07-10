@@ -57,7 +57,8 @@ class Order extends React.Component {
               <p>
                 <span>Date</span>
                 <span>
-                  {format(parseISO(order.createdAt), "MMMM d, yyyy h:mm a")}
+                  // TO DO: FIX THIS ERROR
+                  {/* {format(parseISO(order.createdAt), "MMMM d, yyyy h:mm a")} */}
                 </span>
               </p>
               <p>

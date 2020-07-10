@@ -1,6 +1,7 @@
 const { forwardTo } = require("prisma-binding");
 const { hasPermission } = require("../utils");
 const { createOrder } = require("./Mutation");
+const { createLexer } = require("graphql/language");
 
 const Query = {
   items: forwardTo("db"),
@@ -52,6 +53,20 @@ const Query = {
     }
     // 4. return the order
     return order;
+  },
+  async orders(parent, args, ctx, info) {
+    const { userId } = ctx.request;
+    if (!userId) {
+      throw new Error("You must be signed in!");
+    }
+    return ctx.db.query.orders(
+      {
+        where: {
+          user: { id: userId },
+        },
+      },
+      info
+    );
   },
 };
 
