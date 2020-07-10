@@ -2,9 +2,9 @@ import React from "react";
 import Downshift, { resetIdCounter } from "downshift";
 import Router from "next/router";
 import { ApolloConsumer } from "react-apollo";
+import gql from "graphql-tag";
 import debounce from "lodash.debounce";
 import { DropDown, DropDownItem, SearchStyles } from "./styles/DropDown";
-import gql from "graphql-tag";
 
 const SEARCH_ITEMS_QUERY = gql`
   query SEARCH_ITEMS_QUERY($searchTerm: String!) {
@@ -37,11 +37,11 @@ class AutoComplete extends React.Component {
     items: [],
     loading: false,
   };
-  // debounce makes it so that not too many requests fire off too quickly, in this case every 350 milliseconds
   onChange = debounce(async (e, client) => {
+    console.log("Searching...");
     // turn loading on
     this.setState({ loading: true });
-    // manually query apollo client
+    // Manually query apollo client
     const res = await client.query({
       query: SEARCH_ITEMS_QUERY,
       variables: { searchTerm: e.target.value },
@@ -72,7 +72,7 @@ class AutoComplete extends React.Component {
                   <input
                     {...getInputProps({
                       type: "search",
-                      placeholder: "Search for an Item",
+                      placeholder: "Search For An Item",
                       id: "search",
                       className: this.state.loading ? "loading" : "",
                       onChange: (e) => {
@@ -96,7 +96,7 @@ class AutoComplete extends React.Component {
                     </DropDownItem>
                   ))}
                   {!this.state.items.length && !this.state.loading && (
-                    <DropDownItem>Nothing Found for {inputValue}</DropDownItem>
+                    <DropDownItem> Nothing Found {inputValue}</DropDownItem>
                   )}
                 </DropDown>
               )}
