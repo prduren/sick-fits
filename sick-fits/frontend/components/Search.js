@@ -91,11 +91,11 @@ class AutoComplete extends React.Component {
                       key={item.id}
                       highlighted={index === highlightedIndex}
                     >
-                      <img wdith="50" src={item.image} alt={item.title} />
+                      <img width="50" src={item.image} alt={item.title} />
                       {item.title}
                     </DropDownItem>
                   ))}
-                  {!this.state.item.length && !this.state.loading && (
+                  {!this.state.items.length && !this.state.loading && (
                     <DropDownItem>Nothing Found for {inputValue}</DropDownItem>
                   )}
                 </DropDown>
