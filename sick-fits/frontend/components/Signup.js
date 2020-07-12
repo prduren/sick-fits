@@ -21,8 +21,8 @@ const SIGNUP_MUTATION = gql`
 
 export default class Signup extends Component {
   state = {
-    name: "",
     email: "",
+    name: "",
     password: "",
   };
   saveToState = (e) => {
@@ -87,3 +87,4 @@ export default class Signup extends Component {
     );
   }
 }
+export { SIGNUP_MUTATION };
