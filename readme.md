@@ -1,14 +1,25 @@
-![Advanced React & GraphQL](https://advancedreact.com/images/ARG/arg-facebook-share.png)
 
-# Advanced React & GraphQL
+# Fresh Fits
 
-These are the starter files and stepped solutions for the [Advanced React & GraphQL](https://AdvancedReact.com) course by [Wes Bos](https://WesBos.com/).
+This is an eCommerce site using React.js, Next.js, Apollo Client, GraphQL Yoga, Prisma, Jest, and more!
 
-## Getting Help
+## Functionality
 
-The best place to get help is in the #advanced-react slack room - there is a link in your course dashboard.
+-Frontend supported by React, Next, and Apollo Client
+-Backend supported by GraphQL Yoga, Prisma, Cloudinary, and more
+-Pagination
+-Cart with delete and edit item capability
+-Sell page to add items to main shop page
+-Admin and user priveleges
+-Past orders page
+-Search functionality
+-Password reset
+-Loading bar
+and more!
 
-## FAQ
-
-**Q:** Which Extensions for VS Code is Wes using?  
-**A:** All my extensions are listed on [my dotfiles repo](https://github.com/wesbos/dotfiles), but specifically this course uses [ESLint](https://github.com/Microsoft/vscode-eslint) and [Prettier](https://github.com/prettier/prettier-vscode).
+## Links
+🚀 [Apollo](https://github.com/apollographql/apollo-client)
+🔺[Prisma](https://www.prisma.io/)
+💌[Mailtrap](https://mailtrap.io/?gclid=Cj0KCQjw6ar4BRDnARIsAITGzlDb_X0oataEmJkeL-Bf3lFWq-Lk-yx-L5ilirlRStw91mlraM51GkwaApu4EALw_wcB)
+🧘‍♀️[GraphQL Yoga](https://github.com/prisma-labs/graphql-yoga)
+⚛[React](https://github.com/facebook/react)
