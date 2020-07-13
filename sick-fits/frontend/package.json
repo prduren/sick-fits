@@ -1,7 +1,7 @@
 {
-  "name": "sick-fits-frontend",
+  "name": "fresh-fits-frontend",
   "version": "1.0.0",
-  "description": "Sick Fits! An example React, GraphQL, Next and Apollo",
+  "description": "Fresh Fits! An example React, GraphQL, Next and Apollo",
   "main": "index.js",
   "engines": {
     "node": "12.16.3"
