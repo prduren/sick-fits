@@ -1,7 +1,7 @@
 
 # Fresh Fits
 
-This is an eCommerce site using React.js, Next.js, Apollo Client, GraphQL Yoga, Prisma, Jest, and more!
+This is an eCommerce site using React.js, Next.js, Apollo Client, GraphQL Yoga, Prisma, Jest, Stripe, and more!
 
 ## Functionality
 
@@ -23,7 +23,7 @@ This is an eCommerce site using React.js, Next.js, Apollo Client, GraphQL Yoga, 
 
 -Password reset
 
--Loading bar
+-Stripe payment
 
 and more!
 
