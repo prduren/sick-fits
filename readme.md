@@ -31,10 +31,10 @@ and more!
 
 🚀 [Apollo](https://github.com/apollographql/apollo-client)
 
-🔺[Prisma](https://www.prisma.io/)
+🔺 [Prisma](https://www.prisma.io/)
 
-💌[Mailtrap](https://mailtrap.io/?gclid=Cj0KCQjw6ar4BRDnARIsAITGzlDb_X0oataEmJkeL-Bf3lFWq-Lk-yx-L5ilirlRStw91mlraM51GkwaApu4EALw_wcB)
+💌 [Mailtrap](https://mailtrap.io/?gclid=Cj0KCQjw6ar4BRDnARIsAITGzlDb_X0oataEmJkeL-Bf3lFWq-Lk-yx-L5ilirlRStw91mlraM51GkwaApu4EALw_wcB)
 
-🧘‍♀️[GraphQL Yoga](https://github.com/prisma-labs/graphql-yoga)
+🧘‍♀️ [GraphQL Yoga](https://github.com/prisma-labs/graphql-yoga)
 
-⚛[React](https://github.com/facebook/react)
+⚛ [React](https://github.com/facebook/react)
